@@ -10,13 +10,15 @@ def modify_variable(var):
             var[i] += 1
         if event.is_set():
             break
-        sleep(0.5)
+        #sleep(0.5)
     print("Stop printing")
 
 
 my_var = [1, 2, 3]
-t = Thread(target=modify_variable, args=(my_var,))
+t = Thread(target=modify_variable, args=(my_var, ))
+t2 = Thread(target=modify_variable, args=(my_var, ))
 t.start()
+t2.start()
 while True:
     try:
         print(my_var)

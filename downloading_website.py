@@ -1,3 +1,5 @@
+# source: https://pythonforthelab.com/blog/handling-and-sharing-data-between-threads/s
+
 import os
 from queue import Queue
 from threading import Lock, Thread

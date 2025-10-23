@@ -30,4 +30,4 @@ if __name__ == "__main__":
     t2.start()
     t1.join()
     t2.join()
-    print("Time take for sequential: ", time.time()-start)
+    print("Time take for threading: ", time.time()-start)

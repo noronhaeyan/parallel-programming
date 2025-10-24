@@ -20,7 +20,7 @@ def main():
         count()
 
 async def main_asyncio():
-    await asyncio.gather(asyncio_count(), asyncio_count(), asyncio_count())
+    await asyncio.gather(*(asyncio_count() for _ in range(3)))
         
 
 def main_thread():
